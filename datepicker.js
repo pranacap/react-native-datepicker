@@ -394,8 +394,8 @@ class DatePicker extends Component {
                       <DatePickerIOS
                         date={this.state.date}
                         mode={mode}
-                        minimumDate={minDate && this.getDate(minDate)}
-                        maximumDate={maxDate && this.getDate(maxDate)}
+                        minimumDate={this.getDate(minDate)}
+                        maximumDate={this.getDate(maxDate)}
                         onDateChange={this.onDateChange}
                         minuteInterval={minuteInterval}
                         timeZoneOffsetInMinutes={timeZoneOffsetInMinutes ? timeZoneOffsetInMinutes : null}
